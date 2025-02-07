@@ -12,9 +12,6 @@ for idx , val in enumerate(inputArr) :
 
     for i in range(len(coinType)) :
 
-        if coinType[i] <= 0 :
-            tmp.append(str(0))
-
         if val // coinType[i] > 0:
             tmp.append(str(val // coinType[i]))
             val -=  coinType[i] * (val // coinType[i] )
